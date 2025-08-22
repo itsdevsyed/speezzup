@@ -2,12 +2,14 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "jsx": "react-native",
-    "module": "esnext",
-    "skipLibCheck": true,           
+    "module": "es2022",
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "core": ["../../packages/core"],
+      "core/*": ["../../packages/core/*"]
     }
   },
   "include": [
